@@ -1,9 +1,9 @@
 package com.tier2.securityservice.service
 
-import com.tier2.securityservice.entity.User
+import com.tier2.fitness.common.entity.User
+import com.tier2.fitness.common.repository.UserRepository
 import com.tier2.securityservice.exception.UserAlreadyExistsException
 import com.tier2.securityservice.model.UserUpdateRequest
-import com.tier2.securityservice.repository.UserRepository
 import jakarta.persistence.EntityNotFoundException
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

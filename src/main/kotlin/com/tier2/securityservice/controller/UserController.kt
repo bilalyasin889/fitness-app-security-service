@@ -1,8 +1,8 @@
 package com.tier2.securityservice.controller
 
-import com.tier2.securityservice.entity.toResponse
+import com.tier2.fitness.common.service.TokenService
 import com.tier2.securityservice.model.UserUpdateRequest
-import com.tier2.securityservice.service.TokenService
+import com.tier2.securityservice.model.toResponse
 import com.tier2.securityservice.service.UserService
 import jakarta.persistence.EntityNotFoundException
 import org.slf4j.Logger

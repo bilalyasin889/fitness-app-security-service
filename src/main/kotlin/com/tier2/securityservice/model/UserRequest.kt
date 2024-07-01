@@ -1,7 +1,7 @@
 package com.tier2.securityservice.model
 
-import com.tier2.securityservice.entity.Role
-import com.tier2.securityservice.entity.User
+import com.tier2.fitness.common.entity.Role
+import com.tier2.fitness.common.entity.User
 import java.util.*
 
 data class UserRequest(

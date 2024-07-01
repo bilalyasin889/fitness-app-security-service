@@ -1,5 +1,7 @@
 package com.tier2.securityservice.service
 
+import com.tier2.fitness.common.service.TokenService
+import com.tier2.fitness.common.service.UserDetailsServiceImpl
 import com.tier2.securityservice.model.AuthenticationRequest
 import org.slf4j.LoggerFactory
 import org.springframework.security.authentication.AuthenticationManager

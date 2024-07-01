@@ -1,10 +1,10 @@
 package com.tier2.securityservice.controller
 
-import com.tier2.securityservice.entity.toResponse
 import com.tier2.securityservice.exception.UserAlreadyExistsException
 import com.tier2.securityservice.model.AuthenticationRequest
 import com.tier2.securityservice.model.UserRequest
 import com.tier2.securityservice.model.toModel
+import com.tier2.securityservice.model.toResponse
 import com.tier2.securityservice.service.AuthenticationService
 import com.tier2.securityservice.service.UserService
 import org.slf4j.Logger

@@ -1,7 +1,11 @@
 package com.tier2.securityservice.config
 
+import com.tier2.fitness.common.config.JwtAuthenticationFilter
+import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
@@ -11,6 +15,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
+@ComponentScan("com.tier2.fitness.common")
+@EntityScan("com.tier2.fitness.common.entity")
+@EnableJpaRepositories("com.tier2.fitness.common.repository")
 class SecurityConfiguration(
     private val authenticationProvider: AuthenticationProvider
 ) {
